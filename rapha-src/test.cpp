@@ -129,7 +129,7 @@ int main(void)
 			}
 		}
 		myfile.close();
-		meanLat = (minLat + maxLat) / 2.;
+		meanLat = (minLat + maxLat) / 2.;vai cagar
 
 		//Applies projection to each points and write to csv
 		origin.equirectangular_projection(meanLat);
