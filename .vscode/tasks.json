@@ -1,46 +1,707 @@
 {
-    "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:\\MinGW\\bin\\g++.exe",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:\\MinGW\\bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Generated task by Debugger"
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: cpp.exe build active file",
-            "command": "C:\\MinGW\\bin\\cpp.exe",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:\\MinGW\\bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Generated task by Debugger"
-        }
-    ],
-    "version": "2.0.0"
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SimuladorFormulaNovo Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Shipping",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Shipping",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Shipping",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Test",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Test",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win32",
+				"Test",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Test",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Test",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovo Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovo Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovo",
+				"Win64",
+				"Test",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovoEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovoEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SimuladorFormulaNovoEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		},
+		{
+			"label": "SimuladorFormulaNovoEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SimuladorFormulaNovoEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+			}
+		}
+	]
 }

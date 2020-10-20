@@ -1,20 +1,128 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-
-        {
-            "name": "(Windows) Iniciar",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "ProjetoSimulador.code-workspace/FileDialogFunction.cpp",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false
-        }
-    ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "SimuladorFormulaNovo (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovo Win64 Debug Build",
+			"program": "C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovo (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovo Win64 DebugGame Build",
+			"program": "C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovo (Development)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovo Win64 Development Build",
+			"program": "C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovo (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovo Win64 Shipping Build",
+			"program": "C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovo (Test)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovo Win64 Test Build",
+			"program": "C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovoEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovoEditor Win64 Debug Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovoEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovoEditor Win64 DebugGame Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "SimuladorFormulaNovoEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "SimuladorFormulaNovoEditor Win64 Development Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"C:\\Users\\felip\\Documents\\Unreal Projects\\SimuladorFormulaNovo\\SimuladorFormulaNovo.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.25"
+		}
+	]
 }

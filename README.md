@@ -1,2 +1,0 @@
-# SimuladorFormula
-projeto simulador
